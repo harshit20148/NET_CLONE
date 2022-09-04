@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: "Poppins",sans-serif;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+    z-index: 10;
+}
+
+.navbar_netflix{
+    width: 125px;
+    height: 100%;
+}
+.navbar_nav_items{
+    display: flex;
+    gap: 20px;
+}
+.netflix_logo{
+    width: 100%;
+    height: 100%;
+}
+.language_drop_down{
+    background: transparent;
+    border: none;
+    color: white;
+}
+.dropdown_container{
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.4);
+}
+.signin_button{
+    border: #dc030f;
+    background-color: #dc030f;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    height: 35px;
+    width: 100px;
+}
+.hero_bg_image_container{
+    width: 100%;
+    height: 100%;
+}
+.hero_bg_image{
+    width: 100%;
+    height: 10%;
+    object-fit: cover;
+}
+.hero_bg_overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.hero_card{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hero_title{
+    font-weight: 600;
+    font-size: 3.3rem;
+}
+.hero_subtitle{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.hero_description{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.email{
+    width: 500px;
+    height: 60px;
+    border: 1px solid white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    background-color: white;
+    gap: 0px;
+}
+.get_started{
+    font-size: large;
+    width: 190px;
+    height: 60px;
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4
+{
+    border-top: 8px rgb(36, 35, 35);
+    padding: 50px;
+}
+.card-1{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+.desc-1{
+    padding-left: 80px;
+}
+.card-1 video{
+    position: relative;
+    width: 134%;
+    height: 57%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+.card-1 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.style-cards h1{
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.style-cards h3{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.card-2{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-2{
+    padding-left: 80px;
+}
+
+.card-3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-3{
+    padding-left: 80px;
+    padding-right: 20px;
+}
+.card-3 img{
+    width: 115%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+.card-3 video{
+    position: relative;
+    top: -87px;
+    left: 125px;
+    width: 65%;
+    height: 78%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+.card-4{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+.desc-4{
+    padding-left: 80px;
+}
+.faq{
+    text-align: center;
+}
+.faq h1{
+    padding-bottom: 40px;
+    font-size: 3rem;
+}
+.questions{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    align-items: center;
+}
+.questions li{
+    padding: 20px 30px;
+    margin: 5px;
+    font-size: 1.6rem;
+    background-color: rgb(36, 35, 35);
+    text-align: left;
+    width: 60%;
+}
+.faq p{
+    padding-top: 60px;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+.input{
+    display: inline-grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+}
+.input input{
+    width: 400px;
+    height: 3rem;
+}
+.input button{
+    height: 3.25rem;
+    width: 270px;
+    left: 40px;
+    text-align: center;
+    background-color: #dc030f;
+    font-size: 1.5rem;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+}
+.footer{
+    max-width: 70%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+
+.footer ,
+.footer a{
+    color: #999999;
+    font-size: 0.9rem;
+}
+
+.footer p{
+    margin-bottom: 1.5rem;
+}
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+.footer li{
+    line-height: 2.5;
+}
+.footer-cols ul li{
+    list-style-type: none;
+}
+.questions li{
+    list-style-type: none;
+}
+.dropdown{
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.4);
+    width: fit-content;
+}
+
